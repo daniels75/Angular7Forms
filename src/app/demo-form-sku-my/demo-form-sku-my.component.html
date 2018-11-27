@@ -1,0 +1,11 @@
+<div>Simple form</div>
+
+<form #f="ngForm" (ngSubmit)="updateValue(f.value)">
+  <div>
+    <label for='skuField'>Sku</label>
+    <input type="text" name="skuField" id="skuField" placeholder="sku default value" ngModel>
+    <label for='priceField'>Sku</label>
+    <input type="text" name="priceValue" id="priceField" placeholder="price placeholder" ngModel>
+  </div>
+  <button type="submit">Submit values</button>
+</form>
